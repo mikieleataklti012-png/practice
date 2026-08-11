@@ -106,7 +106,8 @@ function playRound(humanChoice){
     let choice=document.createElement('p');
     score.style.whiteSpace = 'pre-line';
     choice.textContent='YOUR CHOICE ='+humanChoice+', COMPUTER CHOICE ='+computerChoice;
-    score.textContent=winner + '\n \n' + ' YOUR SCORE='+hScore+', COMPUTER SCORE='+cScore;
+    score.textContent=winner + '\n \n' + ' YOUR SCORE='+hScore+', COMPUTER SCORE='+cScore +
+    "\n -----------------------------------------------------";
     scorebord.appendChild(choice);
     scorebord.appendChild(score);
     document.body.appendChild(scorebord);
