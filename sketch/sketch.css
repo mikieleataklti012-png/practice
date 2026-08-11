@@ -1,0 +1,15 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#set{
+    background-color:rgb(248, 167, 149);
+    font: 15px Arial, sans-serif;
+    width: 60px;
+    height: 30px;
+}
+p{
+    font: 20px Arial, sans-serif;
+    text-align: center;
+}
