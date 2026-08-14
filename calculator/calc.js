@@ -105,6 +105,10 @@ buttons.forEach(button => {
                 opereter="";
                 return;
             }
+            else{
+                value="nothing to calculate";
+                updateDisplay(value);
+            }
                return; 
             }
         });
