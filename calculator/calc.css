@@ -40,3 +40,13 @@ body{
     justify-content: center;
     align-items: center;
 }
+#elbi{
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: normal;
+    font-style: italic;
+    font-size: large;
+    background-color: rgb(226, 49, 49);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
