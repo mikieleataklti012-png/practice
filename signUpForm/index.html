@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUP-FORM</title>
+    <link rel="stylesheet" href="signUp.css">
+    <script src="signUp.js" defer></script>
+</head>
+<body>
+   <div class="container">
+
+        <div class="image">
+            <img src="holly-ro-QGlIlJ961Sc-unsplash.jpg" alt="unsplash.com" width="100%" class="bg_img">
+            <img src="odin-lined.png" alt="odin" class="inside_img">
+        </div>
+
+        <div class="signing">
+
+            <div class="introduction">
+                <h1>WELCOME</h1>
+                <h3>This is not a real webpage. HI there, Do you want to sing in to this web page.
+                    I could have use more to convice you to sign up but I dont want to pressure you.
+                </h3>
+                <h4>Sign up below if you are interested</h4>
+            </div>
+            <form action="#" method="post">
+            <div class="form">
+                <fieldset>
+                    <legend> Sing UP</legend>
+                    <div class="inputs">
+                        <div>
+                        <legend>First Name</legend>
+                        <input type="text" id="first_name" name="firtName" required>
+                        </div>
+                        
+                        <div>
+                            <legend>Last Name</legend>
+                            <input type="text" id="last_name" name="lastName" required>
+                        </div>
+
+                        <div>
+                            <legend>Email</legend>
+                            <input type="email" id="email" name="email" placeholder="email@gmail.com"
+                                required >
+                        </div>
+                        
+                        <div>
+                            <legend>Phone Number</legend>
+                            <input type="text" id="phone" name="PhoneNumber" placeholder="0923454354" 
+                                pattern="0\d{9}" required>
+                        </div>
+                        
+                        <div>
+                            <legend>Password</legend>
+                            <input type="password" id="password" name="password"
+                                minlength="8" required>
+                        </div>
+                        
+                        <div>
+                            <legend>Confirm password</legend>
+                            <input type="password" id="confirm" name="confirmPassword"
+                                minlength="8" required>
+                        </div>
+                    </div>
+                    
+                </fieldset>
+            </div>
+            </form>
+            
+            <button id="btn" type="submit" name="submit">Create Account</button>
+
+            <P class="signIn">Already have an account <span class="link"><a href="odin.com" 
+                target="blank">log in</a></span></P>
+
+            <P class="error">" "</P>
+            
+            
+        </div>
+   </div>
+</body>
+</html>
