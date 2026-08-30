@@ -27,49 +27,51 @@
             <form action="#" method="post">
             <div class="form">
                 <fieldset>
-                    <legend> Sing UP</legend>
-                    <div class="inputs">
-                        <div>
-                        <legend>First Name</legend>
-                        <input type="text" id="first_name" name="firtName" required>
-                        </div>
-                        
-                        <div>
-                            <legend>Last Name</legend>
-                            <input type="text" id="last_name" name="lastName" required>
-                        </div>
-
-                        <div>
-                            <legend>Email</legend>
-                            <input type="email" id="email" name="email" placeholder="email@gmail.com"
-                                required >
-                        </div>
-                        
-                        <div>
-                            <legend>Phone Number</legend>
-                            <input type="text" id="phone" name="PhoneNumber" placeholder="0923454354" 
-                                pattern="0\d{9}" required>
-                        </div>
-                        
-                        <div>
-                            <legend>Password</legend>
-                            <input type="password" id="password" name="password"
-                                minlength="8" required>
-                        </div>
-                        
-                        <div>
-                            <legend>Confirm password</legend>
-                            <input type="password" id="confirm" name="confirmPassword"
-                                minlength="8" required>
-                        </div>
+                <legend> Sing UP</legend>
+                <div class="inputs">
+                    <div>
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="firtName" required>
                     </div>
+                    
+                    <div>
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="lastName" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" title="place enter a valid email address"
+                         placeholder="email@gmail.com" required >
+                    </div>
+                    
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="PhoneNumber" title="please enter a valid phone number"
+                        placeholder="0923454354" 
+                            pattern="0\d{9}" required>
+                    </div>
+                    
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" title="please enter a password of minimum 8 characters"
+                            minlength="8" required>
+                    </div>
+                    
+                    <div>
+                        <label for="confirm">Confirm password</label>
+                        <input type="password" id="confirm" name="confirmPassword" title="please enter a password of minimum 8 characters"
+                            minlength="8" required>
+                    </div>
+                </div>
                     
                 </fieldset>
             </div>
-            </form>
-            
+
             <button id="btn" type="submit" name="submit">Create Account</button>
 
+            </form>
+            
             <P class="signIn">Already have an account <span class="link"><a href="odin.com" 
                 target="blank">log in</a></span></P>
 
