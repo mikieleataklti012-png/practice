@@ -149,6 +149,7 @@
 }
 .proj{
     border: 1px solid black;
+    border-left: 7px solid rgb(195, 195, 67);
     font-size: large;
     background-color: white;
     border-radius: 10px;
