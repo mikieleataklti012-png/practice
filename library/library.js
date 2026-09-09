@@ -1,5 +1,4 @@
 let BookId=0;
-let row;
 
 function Book(Title,Author,Pages,ID){
     if(!new.target){
@@ -29,13 +28,13 @@ function addTable(myLibrary){
     let table= document.querySelector('.library_table');
     table.innerHTML="";
     myLibrary.forEach(book=>{
-        row=`
+        let row=`
         <tr>
             <td>${book.Title}</td>
             <td>${book.Author}</td>
             <td>${book.Pages}</td>
             <td>${book.ID}</td>
-            <td class="remove" style="color:rgb(234, 51, 51); cursor: pointer;" data-id="${book.ID}">REMOVE</td>
+            <td class="remove" style="cursor: pointer;" data-id="${book.ID}">REMOVE</td>
         </tr>
         `;
         table.innerHTML+=row;
