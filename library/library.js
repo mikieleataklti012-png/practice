@@ -13,7 +13,7 @@ function Book(Title,Author,Pages,ID){
 
 const myLibrary=[
     new Book("football","miki",210),
-    new Book("cooking","kal",210)
+    new Book("dancing","kal",210)
 ];
 
 function addBook(title,author,pages){
