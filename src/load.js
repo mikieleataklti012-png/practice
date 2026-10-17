@@ -10,7 +10,16 @@ let content=document.getElementById("content");
     })
 
 about.addEventListener('click',()=>{
+
+    let menu=document.getElementById('subMenu');
+    if(menu){
+        menu.remove();
+    }
     content.innerHTML = "<h2>About Page</h2>";
+    let p=document.createElement("p");
+    p.textContent = "If you have any questions please contact the customer service at 1-800-555-5555 or email us at foods@gmail.com";
+    p.style.fontSize="25px"
+    content.appendChild(p);
 })    
 
 export function load() {

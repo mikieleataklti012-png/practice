@@ -1,5 +1,5 @@
 import {load} from './load.js';
-import{menu} from './menu.js'
+import{menubtn} from './menubtn.js'
 
 index();
 
@@ -23,6 +23,6 @@ export function index(){
 
     let btn= document.getElementById('menu-btn');
         btn.addEventListener('click',()=>{
-            menu();
+            menubtn();
         });
 }
