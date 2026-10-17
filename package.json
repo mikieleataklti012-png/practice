@@ -1,13 +1,17 @@
 {
-  "name": "resturant",
+  "name": "restaurant",
   "version": "1.0.0",
-  "description": "",
+  "description": "A restaurant web application built with Webpack and JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "restaurant",
+    "webpack"
+  ],
+  "author": "mikieleataklti012",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
