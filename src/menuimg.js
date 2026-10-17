@@ -13,6 +13,7 @@ export function orderimg() {
         });
 
     let content=document.getElementById('content');
+    content.innerHTML="";
     content.innerHTML = "<h2>Order Page</h2>";
 
     let div1=document.createElement('div');

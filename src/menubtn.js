@@ -1,5 +1,6 @@
 import {orderimg} from './menuimg.js';
-import { view } from './viewimg.js';
+import { reserving } from './reserve.js';
+import { viewing } from './viewimg.js';
 
 export function menubtn(){
 
@@ -35,12 +36,13 @@ export function menubtn(){
         })
 
         view.addEventListener('click',()=>{
-            content.innerHTML = "<h2>View Page</h2>";
-            view();
+            content.innerHTML = "";
+            viewing();
         })
 
         reserve.addEventListener('click',()=>{
-            content.innerHTML = "<h2>Reserve Page</h2>";
+            content.innerHTML = "";
+            reserving();
         })
 
     }
