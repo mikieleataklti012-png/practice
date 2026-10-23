@@ -21,7 +21,7 @@ export function upcomingDate(){
     if(upcoming.length===0){
         let div=document.createElement('div');
         let p=document.createElement('h3');
-        p.textContent='No Projects Due-Today'
+        p.textContent='No Upcoming Projects'
         div.appendChild(p)
         display.appendChild(div);
         return;
