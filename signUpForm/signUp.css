@@ -1,0 +1,81 @@
+input:user-valid{
+    border: 2px solid green;
+}
+input:user-invalid{
+    border: 2px solid red;
+}
+input{
+    border: 2px solid black;
+}
+h3{
+    font: normal;
+    font-style: italic;
+}
+.h1{
+    font: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.signing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+}
+.form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    width: 100%;
+}
+.inputs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    width: 100%;
+}
+button{
+    border: 2px solid black;
+    background-color: #596D48;
+    margin-top: 10px;
+    margin-right: 300px;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height:100%;
+}
+bg_img{
+    position: relative;
+}
+.inside_img{
+    position: absolute;
+    bottom: 100px;     
+    left: 200px;        
+    width: 300px;       
+    opacity: 0.6;       
+    transition: opacity 0.3s ease;
+}
+p{
+    font:bold;
+    font-family: inherit;
+}
+.signIn{
+    margin-right: 300px;
+}
+.error{
+    margin-right: 300px;
+    font: bold;
+    font-size: large;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}

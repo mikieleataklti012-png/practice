@@ -1,0 +1,24 @@
+.gameboard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 5px;
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+ }
+.gameboard button{
+    cursor: pointer;
+    border: 1px solid black;
+    font: 2rem Arial, sans-serif;
+ }
+ .turn p{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+ }
+ .play{
+   width: 120px;
+   margin-left:20px;
+  background-color: rgb(82, 82, 185);
+ }

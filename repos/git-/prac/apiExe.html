@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--b3Y0NzzU3j6sXdLKUBWBbvePI5V8g5WZ-->
+    <img src="#">
+    <script>
+        const img = document.querySelector('img');
+        fetch('https://api.giphy.com/v1/gifs/random?api_key=b3Y0NzzU3j6sXdLKUBWBbvePI5V8g5WZ&tag=cats&rating=g')
+            .then(function(response) {
+            return response.json();
+            })
+            .then(function(response) {
+            img.src=response.data.images.original.url
+            });
+            <!--or usign async and await-->
+            async function getImg() {
+                try{
+                    let response= await fetch('https://api.giphy.com/v1/gifs/random?api_key=b3Y0NzzU3j6sXdLKUBWBbvePI5V8g5WZ&tag=cats&rating=g')
+                    let responseImg=await response.json();
+                    img.src=responseImg.data.images.original.url;
+                }catch(error){
+                    console.error(err);
+                }
+            }
+
+    </script>
+</body>
+</html>
